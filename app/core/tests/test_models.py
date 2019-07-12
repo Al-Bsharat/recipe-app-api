@@ -31,4 +31,4 @@ class ModelTests(TestCase):
         email = 'test@ASPIRE-INFOTECH.NET'
         user = get_user_model().objects.create_superuser(email, '123')
         self.assertTrue(user.is_superuser)
-        self.assertTrue(user.is_stuff)
+        self.assertTrue(user.is_staff)
